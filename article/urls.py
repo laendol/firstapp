@@ -5,5 +5,6 @@ urlpatterns = [
     url(r'^3/', 'article.views.template_three'),
     url(r'^articles/all/$', 'article.views.articles'),
     url(r'^articles/get/(?P<article_id>\d+)/$', 'article.views.article'),
+    url(r'^articles/addlike/(?P<article_id>\d+)/$', 'article.views.addlike'),
     url(r'^', 'article.views.articles'),
 ]
