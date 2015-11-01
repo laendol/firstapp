@@ -9,5 +9,5 @@ class Article(models.Model):
 
 
 class Comments(models.Model):
-	comments_text = models.TextField()
+	comments_text = models.TextField(verbose_name="Comment text")
 	comments_article = models.ForeignKey(Article)
